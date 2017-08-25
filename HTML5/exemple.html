@@ -1,0 +1,126 @@
+<!-- File : Examples.html  -->
+<!-- Author: Huy Cuong Doan -->
+<!-- Date : August 25 2017  -->
+<!-- Role: Learning basic HTML  -->
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+		Hello World!
+	<!-- Paragraphes and button -->
+		<p id= "title">Hello</p>
+		<p>World</p>
+		<p>Press this <button> button </button></p>
+		
+	<!-- Table and list -->
+		<list>
+			<caption>Top 3 University in Montreal</caption>
+			<li>HEC</li>
+			<li>UdeM</li>
+			<li>McGill</li>
+			<li>Polytechnique</li>
+		</list>
+		
+		<table>
+			<tr>
+				<th>Prenom</th>
+				<th>Nom</th>
+				<th>age</th>		
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td>Boy</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>Alice</td>
+				<td>Moyen</td>
+				<td>24</td>
+			</tr>
+			<p><caption> Effectif 2016 </caption></p>
+		</table>
+		
+	<!-- Insert an image -->
+		<p>
+			<img src=https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/562534_10151311122680876_1569501407_n.jpg?oh=6ec72af4398b3e08f7695a892e8e076c&oe=5A1386F5 
+				height='50vw' 
+				width='50vw' 
+				alt='wrong'>  
+			<div>This is me</div>
+			
+			
+			<img src=https://wrongsource.png 
+				height='50vw' 
+				width='50vw' 
+				alt='wrong source message'>  
+			<div>When the source is wrong</div>
+				
+				
+		</p>
+		
+	<!-- Insert an hypertext link -->
+		<p>
+			This is <a href = "http://github.com/doanhuyc"> my github page </a></br>
+			<a href="mailto:test@gmail.com"> Contact me> </a>
+		</p>
+		<p>
+			<a href= "#title"> Return to Hello</a> <!-- #title is an id of <p>Hello</p> at the beginning-->
+		</p>
+		
+	<!-- Insert an iflame -->
+		<p> 
+		<iframe width="560" 
+				height="315" 
+				src="https://www.youtube.com/embed/4bmUFRxNEIg" 
+				frameborder="0" allowfullscreen></iframe></br>
+				<div>This is my favorite song from youtube</div></br>
+		
+		<iframe src="http://www.editions-ellipses.fr/"></iframe>
+				<div>A Random Website using iframe</div>	
+		</p>
+	<!-- Form -->
+		<form>
+			<p>
+				<label>First Name</label>
+				<input id="firstName">
+			</p>
+			<p>
+				<label>Last Name</label>
+				<input id="lastName">
+			</p>
+			<p>
+				Sex:
+				<input type="radio" name="sex" value="F"> Female
+				<input type="radio" name="sex" value="H"> Male
+			</p>
+			<p>
+				You have:
+				<input type="checkbox" name="QCM" value="choice1"> a car
+				<input type="checkbox" name="QCM" value="choice2"> a house
+				<input type="checkbox" name="QCM" value="choice3"> a wife
+				<input type="checkbox" name="QCM" value="choice4"> a dog
+			</p>
+			<p>
+				Your birth's month:
+				<select>
+					<option value= "January">1</option>
+					<option value= "Febuary">2</option>
+					<option value= "March">3</option>
+					<option value= "April">4</option>
+					<option value= "May">5</option>
+					<option value= "Juin">6</option>
+					<option value= "July">7</option>
+					<option value= "August">8</option>
+					<option value= "September">9</option>
+					<option value= "October">10</option>
+					<option value= "November">11</option>
+					<option value= "December">12</option>
+				</select>
+			</p>
+		</form>
+
+		
+	</body>
+</html>
