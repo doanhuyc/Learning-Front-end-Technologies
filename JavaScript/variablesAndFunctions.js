@@ -20,3 +20,13 @@ function hello(){
 //Call Back Function
 setTimeout(hello(),10000);
 
+//loosely type example
+var a= 10;
+console.log(a);
+a= true;
+console.log(a);
+a="Steve";
+console.log(a);
+a=null;
+console.log(a);
+
