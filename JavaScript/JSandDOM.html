@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<script>
+			function calcul(a){
+				alert(a+5);
+			}
+			
+			function sendInfo(){
+				var myName = document.getElementById("name");
+				alert (myName.value);
+			}
+			function off(){
+				var cibble = document.getElementById("b");
+				cibble.setAttribute("disabled", true);
+			}
+			
+			function continu(){
+				var cibble = document.getElementById("continue");
+				cibble.removeAttribute("hidden");
+			}
+			function image(){
+				var node= document.createElement("img")
+				node.setAttribute("scr", "https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/562534_10151311122680876_1569501407_n.jpg?oh=6ec72af4398b3e08f7695a892e8e076c&oe=5A1386F5 ");
+				node.setAttribute ("height", "50vw");
+				node.setAttribute("width" , "50vw");
+				document.getElementById("p").appendChild(node);
+			}
+			function del(){
+				var cible= document.getElementById("del");
+				document.body.removeChild(cible);
+			}
+		</script>
+	</head>
+	<body>
+		<!-- Calculer-->
+		<p>
+			<button onclick="calcul(12)"> Calcul</button>
+		</p>
+		<!-- holding an input from user -->
+		<p>
+			<form>
+			<input id="name" type="text">
+			<button onclick= "sendInfo()"> Send </button>
+			</form>
+		</p>
+		
+		<!-- Deactivate an element HTML -->
+		<p>
+			<button id='a' onclick="off()">Hide B button</button>
+			<button id ='b'>B</button>
+		</p>
+		
+		<!-- delete an attribute -->
+		<p>
+			Click Yes to continue </br>
+			<button id='yes' onclick="continu()">Yes</button>
+			<button id='no'>No</button>
+			<button id= "continue" hidden="">Continue</button>
+		</p
+		
+		<!-- Create an new element-->
+		<p id="p">
+			<button id="image" onclick="image()">Create an image</button>
+		</p>
+		<!-- delete an element -->
+		<div id ="del">
+			this is the message that will be deleted</br>
+			<button onclick = "del()">Delete this section</button>
+		</div>
+	</body>
+</html>

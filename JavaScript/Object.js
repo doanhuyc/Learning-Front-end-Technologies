@@ -44,6 +44,17 @@ var person3 = new Object();
 console.log (person3.hasOwnProperty("firstName"));
 console.log (person1.hasOwnProperty("firstName"));
 
+//create Object using Constructor
+
+function addr (phone,email,street,ville){
+	this.phone=phone;
+	this.email=email;
+	this.street=street;
+	this.ville=ville;
+}
+var add1 = new addr("0988888590","hcuong.doan@gmail.com","HVT","HCM");
+console.log(add1.phone);
+
 //iteration all key in a object
 var compt=1;
 for (var key in person1){
